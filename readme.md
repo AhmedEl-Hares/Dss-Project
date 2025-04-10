@@ -28,6 +28,7 @@
 
 ### Adding BMI Category column
 
+
 ## Second dataset
 
 ### Keeping only the columns that we need for calculating the labels
@@ -40,6 +41,7 @@
 
 ### Adding BMI Category column
 
+
 ## Third dataset
 
 ### Removing some rows because we couldn't fill them in a logical way
@@ -51,6 +53,7 @@
 ### Calculating the BMI and Adding it in a column
 
 ### Adding BMI Category column
+
 
 ## Fourth dataset
 
@@ -65,6 +68,7 @@
 ### Calculating the BMI and Adding it in a column
 
 ### Adding BMI Category column
+
 
 ## After the preprocessing and merging:
 
