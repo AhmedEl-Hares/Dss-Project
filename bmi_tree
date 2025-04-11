@@ -1,0 +1,29 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label=<BMI &le; 21.75<br/>entropy = 2.807<br/>samples = 7<br/>value = [1, 1, 1, 1, 1, 1, 1]<br/>class = Severe Thinness>, fillcolor="#ffffff"] ;
+1 [label=<BMI &le; 16.5<br/>entropy = 1.585<br/>samples = 3<br/>value = [1, 1, 0, 0, 0, 0, 1]<br/>class = Severe Thinness>, fillcolor="#ffffff"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+5 [label=<entropy = 0.0<br/>samples = 1<br/>value = [0, 0, 0, 0, 0, 0, 1]<br/>class = Obese Class II>, fillcolor="#e53986"] ;
+1 -> 5 ;
+6 [label=<BMI &le; 17.75<br/>entropy = 1.0<br/>samples = 2<br/>value = [1, 1, 0, 0, 0, 0, 0]<br/>class = Severe Thinness>, fillcolor="#ffffff"] ;
+1 -> 6 ;
+11 [label=<entropy = 0.0<br/>samples = 1<br/>value = [0, 1, 0, 0, 0, 0, 0]<br/>class = Moderate Thinness>, fillcolor="#b7e539"] ;
+6 -> 11 ;
+12 [label=<entropy = 0.0<br/>samples = 1<br/>value = [1, 0, 0, 0, 0, 0, 0]<br/>class = Severe Thinness>, fillcolor="#e58139"] ;
+6 -> 12 ;
+2 [label=<BMI &le; 32.5<br/>entropy = 2.0<br/>samples = 4<br/>value = [0, 0, 1, 1, 1, 1, 0]<br/>class = Mild Thinness>, fillcolor="#ffffff"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+3 [label=<BMI &le; 27.5<br/>entropy = 1.0<br/>samples = 2<br/>value = [0, 0, 1, 0, 0, 1, 0]<br/>class = Mild Thinness>, fillcolor="#ffffff"] ;
+2 -> 3 ;
+7 [label=<entropy = 0.0<br/>samples = 1<br/>value = [0, 0, 1, 0, 0, 0, 0]<br/>class = Mild Thinness>, fillcolor="#39e54d"] ;
+3 -> 7 ;
+8 [label=<entropy = 0.0<br/>samples = 1<br/>value = [0, 0, 0, 0, 0, 1, 0]<br/>class = Obese Class I>, fillcolor="#b139e5"] ;
+3 -> 8 ;
+4 [label=<BMI &le; 37.5<br/>entropy = 1.0<br/>samples = 2<br/>value = [0, 0, 0, 1, 1, 0, 0]<br/>class = Normal>, fillcolor="#ffffff"] ;
+2 -> 4 ;
+9 [label=<entropy = 0.0<br/>samples = 1<br/>value = [0, 0, 0, 1, 0, 0, 0]<br/>class = Normal>, fillcolor="#39e5e2"] ;
+4 -> 9 ;
+10 [label=<entropy = 0.0<br/>samples = 1<br/>value = [0, 0, 0, 0, 1, 0, 0]<br/>class = Overweight>, fillcolor="#3956e5"] ;
+4 -> 10 ;
+}
